@@ -202,13 +202,6 @@ async def batch_link(_, message):
     else:
         await app.send_message(message.chat.id, "Maximum attempts exceeded. Try later.")
         return
-    
-    num_msg = await app.ask(message.chat.id, "By how much do you want to jump")
-    try:
-        j = int(num_msg.text.strip())
-    except ValueError:
-        j=1
-        await app.send_message(message.chat.id, "<blockquote>Invalid number </blockquote>")
             
     # Number of messages input
     for attempt in range(3):
