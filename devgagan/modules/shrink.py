@@ -80,8 +80,8 @@ async def token_handler(client, message):
     user_id = message.chat.id
     if len(message.command) <= 1:
         image_url = "https://tinypic.host/image/Ratan-Tata-Sir.3uJtPm"
-        join_button = InlineKeyboardButton("Join Channel", url=f"{c_url}")
-        #premium = InlineKeyboardButton("premium", url="{Contact}")   
+        join_button = InlineKeyboardButton("🎗Join Channel🎗", url=f"{c_url}")
+        premium = InlineKeyboardButton("😇Get premium👑", url="{https://t.me/taporibot_bot}")   
         keyboard = InlineKeyboardMarkup([
             [join_button] 
         ])
@@ -89,9 +89,10 @@ async def token_handler(client, message):
         await message.reply_photo(
             photo=img_url,
             caption=(
-                ">Hi 👋 Welcome To Team 𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷 SRC Bot\n"
-                "✳️ I am Save Restricted Robot 🤖 \n\n"
-                "> /help --> Know Commod Details \n> /myplan to check Your Plan"
+                "Hi 👋 Welcome To Team 𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷 \n"
+                ">✳️ I'm your ultimate content saver bot! 🤖 \n>📱 Save posts from channels/groups where forwarding is disabled \n>⚡️ Batch processing with premium features \n>🔒 Secure & fast downloads \n\n"
+                "🤔How to use:\n"
+                "> • Send any public channel post link \n> • For private channels: use /login \n> • Get help: send /help \n> • Get free token: send /token "
             ),
             reply_markup=keyboard
         )
