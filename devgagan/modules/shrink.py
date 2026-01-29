@@ -81,7 +81,7 @@ async def token_handler(client, message):
     if len(message.command) <= 1:
         image_url = "https://tinypic.host/image/Ratan-Tata-Sir.3uJtPm"
         join_button = InlineKeyboardButton("🎗Join Channel🎗", url=f"{c_url}")
-        premium = InlineKeyboardButton("😇Get premium👑", url="https://t.me/taporibot_bot")   
+        #premium = InlineKeyboardButton("😇Get premium👑", url="https://t.me/taporibot_bot")   
         keyboard = InlineKeyboardMarkup([
             [join_button] 
         ])
